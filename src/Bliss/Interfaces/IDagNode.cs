@@ -1,16 +1,14 @@
-namespace Bliss
-{
+namespace Bliss;
 
+/// <summary>
+/// Execution engine responsible to execute the nodes in the graph.
+/// </summary>
+public interface IDagNode
+{
     /// <summary>
-    /// Execution engine responsible to execute the nodes in the graph.
+    /// Executes a node in the graph.
     /// </summary>
-    public interface IDagNode
-    {
-        /// <summary>
-        /// Executes a node in the graph.
-        /// </summary>
-        /// <param name="unitOfExecution">The node to be executed.</param>
-        /// <returns>0 if success, < 0 otherwise.</returns>
-        Task<int> ExecuteAsync();
-    }
+    /// <param name="unitOfExecution">The node to be executed.</param>
+    /// <returns>0 if success, < 0 otherwise.</returns>
+    Task<int> ExecuteAsync();
 }
