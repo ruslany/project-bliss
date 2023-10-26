@@ -10,5 +10,5 @@ public interface IDagExecutor
     /// </summary>
     /// <param name="request">The request to be processed</param>
     /// <returns>The response.</returns>
-    Task<RequestResponse> ProcessRequestAsync(DagRequest request);
+    Task<DagResponse> ProcessRequestAsync(DagRequest request);
 }
