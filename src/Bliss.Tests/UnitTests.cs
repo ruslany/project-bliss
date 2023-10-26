@@ -1,4 +1,4 @@
-namespace bliss_tests;
+namespace Bliss.Tests;
 
 public class UnitTests
 {
